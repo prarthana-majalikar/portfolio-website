@@ -4,22 +4,26 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
-  }
-
-  .dark {
     --background: 222.2 84% 4.9%;
     --foreground: 210 40% 98%;
   }
 
   body {
-    @apply bg-white text-gray-900;
+    @apply bg-dark-900 text-gray-100;
     font-feature-settings: "rlig" 1, "calt" 1;
   }
 
   html {
     scroll-behavior: smooth;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-serif;
   }
 }
 
@@ -29,14 +33,10 @@
   }
 
   .gradient-text {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary-600 to-blue-600;
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary-400 to-primary-600;
   }
 
   .glass-morphism {
-    @apply bg-white/80 backdrop-blur-lg border border-gray-200/50;
-  }
-
-  .dark .glass-morphism {
-    @apply bg-gray-900/80 border-gray-700/50;
+    @apply bg-dark-800/80 backdrop-blur-lg border border-dark-700/50;
   }
 }

@@ -1,10 +1,11 @@
 export const personalInfo = {
   name: 'Prarthana Majalikar',
-  title: 'Software Engineer Specializing in AI Applications',
+  title: 'Software Engineer',
   subtitle: 'MCS @ UC Irvine | Cloud Solutions & AI/ML Applications',
-  email: '[email protected]',
+  email: 'pmajalik@uci.edu',
   linkedin: 'https://www.linkedin.com/in/prarthanamajalikar',
   github: 'https://github.com/prarthana-majalikar',
+  resLink: 'https://reslink.io/reslink/prarthana-majalikar-software-engineer-applied-ai'
 }
 
 export const about = {
@@ -115,23 +116,23 @@ export const skillsData = {
   "AI & Machine Learning": [
     { name: "Python", logo: "/skills-logos/python.svg", category: "language" },
     { name: "LangChain", logo: "/skills-logos/langchain.svg", category: "framework" },
-    { name: "TensorFlow", logo: "/skills-logos/tensorflow.svg", category: "framework" },
+    // { name: "TensorFlow", logo: "/skills-logos/tensorflow.svg", category: "framework" },
     { name: "scikit-learn", logo: "/skills-logos/sklearn.svg", category: "framework" },
-    { name: "PyTorch", logo: "/skills-logos/pytorch.svg", category: "framework" },
+    // { name: "PyTorch", logo: "/skills-logos/pytorch.svg", category: "framework" },
   ],
   "Cloud & Infrastructure": [
-    { name: "Google Cloud", logo: "/skills-logos/gcp.svg", category: "cloud" },
+    { name: "Google Cloud Platform (GCP)", logo: "/skills-logos/gcp.svg", category: "cloud" },
     { name: "AWS", logo: "/skills-logos/aws.svg", category: "cloud" },
     { name: "Docker", logo: "/skills-logos/docker.svg", category: "tool" },
     { name: "Kubernetes", logo: "/skills-logos/kubernetes.svg", category: "tool" },
   ],
   "Backend Engineering": [
     { name: "Java", logo: "/skills-logos/java.svg", category: "language" },
-    { name: "Spring Boot", logo: "/skills-logos/spring.svg", category: "framework" },
+    { name: "Spring Boot", logo: "/skills-logos/spring-3.svg", category: "framework" },
     { name: "FastAPI", logo: "/skills-logos/fastapi.svg", category: "framework" },
     { name: "Flask", logo: "/skills-logos/flask.svg", category: "framework" },
     { name: "PostgreSQL", logo: "/skills-logos/postgresql.svg", category: "database" },
-    { name: "MongoDB", logo: "/skills-logos/mongodb.svg", category: "database" },
+    { name: "MongoDB", logo: "/skills-logos/mongoDB.svg", category: "database" },
   ],
   "DevOps & Tools": [
     { name: "Git", logo: "/skills-logos/git.svg", category: "tool" },

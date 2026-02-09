@@ -4,6 +4,7 @@ import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 import { useState } from 'react'
 import { skillsData } from '@/lib/data'
+import Image from 'next/image'
 
 export function Skills() {
   const [ref, inView] = useInView({
@@ -116,16 +117,20 @@ function SkillCard({ skill, index, categoryIndex, inView, isSelected, onClick }:
       whileHover={{ scale: 1.1, y: -5 }}
       whileTap={{ scale: 0.95 }}
       onClick={onClick}
-      className={`glass-morphism p-6 rounded-lg text-center cursor-pointer transition-all ${
-        isSelected ? 'ring-2 ring-primary-600 shadow-xl' : 'shadow-md'
-      }`}
+      className={`glass-morphism p-6 rounded-lg text-center cursor-pointer transition-all ${isSelected ? 'ring-2 ring-primary-600 shadow-xl' : 'shadow-md'
+        }`}
     >
-      {/* Placeholder for logo - replace with actual SVG logos */}
-      <div className="w-16 h-16 mx-auto mb-3 bg-gradient-to-br from-primary-100 to-blue-100 dark:from-primary-900 dark:to-blue-900 rounded-lg flex items-center justify-center">
-        <span className="text-2xl font-bold text-primary-600 dark:text-primary-400">
-          {skill.name.charAt(0)}
-        </span>
+      <div className="w-16 h-16 mx-auto mb-3 relative">
+        <Image
+          src={skill.logo}
+          alt={`${skill.name} logo`}
+          fill
+          className="object-contain"
+          sizes="(max-width: 640px) 48px, 64px"
+          priority={false}
+        />
       </div>
+
       <div className="text-sm font-medium text-gray-900 dark:text-white">
         {skill.name}
       </div>

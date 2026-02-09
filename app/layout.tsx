@@ -1,10 +1,17 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Tinos, Nunito_Sans } from 'next/font/google'
 import './globals.css'
 
-const inter = Inter({ 
+const tinos = Tinos({
+  weight: ['400', '700'],
   subsets: ['latin'],
-  variable: '--font-inter',
+  variable: '--font-tinos',
+})
+
+const nunitoSans = Nunito_Sans({
+  weight: ['400', '600', '700'],
+  subsets: ['latin'],
+  variable: '--font-nunito',
 })
 
 export const metadata: Metadata = {
@@ -33,8 +40,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={inter.variable}>
-      <body className="antialiased">
+    <html lang="en" className={`${tinos.variable} ${nunitoSans.variable}`}>
+      <body className="antialiased font-sans">
         {children}
       </body>
     </html>
