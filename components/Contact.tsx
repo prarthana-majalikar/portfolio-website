@@ -12,7 +12,7 @@ export function Contact() {
   })
 
   return (
-    <section id="contact" className="py-20 bg-white dark:bg-gray-900" ref={ref}>
+    <section id="contact" className="py-20 bg-dark-900" ref={ref}>
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -22,7 +22,7 @@ export function Contact() {
           <h2 className="text-3xl sm:text-4xl font-bold mb-6 gradient-text">
             Let's Connect
           </h2>
-          <p className="text-xl text-gray-700 dark:text-gray-300 mb-12">
+          <p className="text-xl text-gray-200 mb-12">
             Interested in AI products that need solid engineering fundamentals? Let's talk.
           </p>
 
@@ -92,11 +92,11 @@ function ContactCard({ icon, label, value, href, delay, inView }: ContactCardPro
       whileHover={{ y: -5 }}
       className="glass-morphism p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow"
     >
-      <div className="text-primary-600 dark:text-primary-400 mb-4 flex justify-center">
+      <div className="text-primary-400 mb-4 flex justify-center">
         {icon}
       </div>
-      <h3 className="font-bold text-gray-900 dark:text-white mb-2">{label}</h3>
-      <p className="text-sm text-gray-600 dark:text-gray-400 break-all">{value}</p>
+      <h3 className="font-bold text-gray-100 mb-2">{label}</h3>
+      <p className="text-sm text-gray-300 break-all">{value}</p>
     </motion.a>
   )
 }

@@ -12,12 +12,12 @@ export function Experience() {
   })
 
   return (
-    <section id="experience" className="py-20 bg-gray-50 dark:bg-gray-800" ref={ref}>
+    <section id="experience" className="py-20 bg-dark-700" ref={ref}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
-          className="text-3xl sm:text-4xl font-bold text-center mb-12 gradient-text"
+          className="text-3xl sm:text-4xl font-bold text-center mb-12 gradient-text font-serif"
         >
           Experience
         </motion.h2>
@@ -34,22 +34,22 @@ export function Experience() {
             >
               <div className="flex items-start gap-4 mb-6">
                 <div className="bg-primary-100 dark:bg-primary-900 p-3 rounded-lg shrink-0">
-                  <Briefcase className="text-primary-600 dark:text-primary-400" size={24} />
+                  <Briefcase className="text-primary-400" size={24} />
                 </div>
                 <div className="flex-1">
-                  <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-1">
+                  <h3 className="text-2xl font-bold font-serif text-gray-100 mb-1">
                     {exp.title}
                   </h3>
-                  <p className="text-lg text-primary-600 dark:text-primary-400 font-medium mb-1">
+                  <p className="text-lg text-primary-400 font-medium mb-1">
                     {exp.company} • {exp.location}
                   </p>
-                  <p className="text-sm text-gray-600 dark:text-gray-400">
+                  <p className="text-sm text-gray-300">
                     {exp.period}
                   </p>
                 </div>
               </div>
 
-              <p className="text-gray-700 dark:text-gray-300 mb-6">
+              <p className="text-gray-200 mb-6">
                 {exp.description}
               </p>
 
@@ -70,7 +70,7 @@ export function Experience() {
                       <div className="font-bold text-primary-700 dark:text-primary-300 mb-1">
                         {achievement.metric}
                       </div>
-                      <div className="text-gray-700 dark:text-gray-300">
+                      <div className="text-gray-200">
                         {achievement.description}
                       </div>
                     </div>
@@ -83,7 +83,7 @@ export function Experience() {
                 {exp.techStack.map((tech, i) => (
                   <span
                     key={i}
-                    className="px-3 py-1 bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 text-sm rounded-full"
+                    className="px-3 py-1 bg-gray-100 dark:bg-gray-800 text-gray-200 text-sm rounded-full"
                   >
                     {tech}
                   </span>

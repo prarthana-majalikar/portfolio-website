@@ -26,7 +26,7 @@ export function About() {
   }
 
   return (
-    <section id="about" className="py-20 bg-white dark:bg-gray-900" ref={ref}>
+    <section id="about" className="py-20 bg-dark-800" ref={ref}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           variants={containerVariants}
@@ -35,27 +35,27 @@ export function About() {
         >
           <motion.h2
             variants={itemVariants}
-            className="text-3xl sm:text-4xl font-bold text-center mb-12 gradient-text"
+            className="text-3xl sm:text-4xl font-bold text-center mb-12 gradient-text font-serif"
           >
             About
           </motion.h2>
 
           <div className="grid md:grid-cols-2 gap-8 mb-8">
             <motion.div variants={itemVariants} className="space-y-4">
-              <p className="text-lg text-gray-700 dark:text-gray-300">
+              <p className="text-lg text-gray-200">
                 {about.intro}
               </p>
-              <p className="text-lg text-gray-700 dark:text-gray-300">
+              <p className="text-lg text-gray-200">
                 {about.experience}
               </p>
-              <p className="text-lg text-gray-700 dark:text-gray-300">
+              <p className="text-lg text-gray-200">
                 {about.current}
               </p>
             </motion.div>
 
             <motion.div variants={itemVariants} className="space-y-6">
               <div>
-                <h3 className="text-xl font-semibold mb-3 text-gray-900 dark:text-white">
+                <h3 className="text-xl font-semibold font-serif mb-3 text-gray-100 font-serif">
                   Specializations
                 </h3>
                 <ul className="space-y-2">
@@ -63,9 +63,9 @@ export function About() {
                     <motion.li
                       key={index}
                       variants={itemVariants}
-                      className="flex items-start gap-2 text-gray-700 dark:text-gray-300"
+                      className="flex items-start gap-2 text-gray-200"
                     >
-                      <span className="text-primary-600 mt-1">•</span>
+                      <span className="text-primary-400 mt-1">•</span>
                       <span>{spec}</span>
                     </motion.li>
                   ))}
@@ -73,10 +73,10 @@ export function About() {
               </div>
 
               <div>
-                <h3 className="text-xl font-semibold mb-3 text-gray-900 dark:text-white">
+                <h3 className="text-xl font-semibold font-serif mb-3 text-gray-100 font-serif">
                   Currently Exploring
                 </h3>
-                <p className="text-gray-700 dark:text-gray-300">{about.exploring}</p>
+                <p className="text-gray-200">{about.exploring}</p>
               </div>
             </motion.div>
           </div>

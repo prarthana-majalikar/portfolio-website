@@ -12,12 +12,12 @@ export function Education() {
   })
 
   return (
-    <section id="education" className="py-20 bg-gray-50 dark:bg-gray-800" ref={ref}>
+    <section id="education" className="py-20 bg-dark-700" ref={ref}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
-          className="text-3xl sm:text-4xl font-bold text-center mb-12 gradient-text"
+          className="text-3xl sm:text-4xl font-bold text-center mb-12 gradient-text font-serif"
         >
           Education
         </motion.h2>
@@ -34,25 +34,25 @@ export function Education() {
             >
               <div className="flex items-start gap-4">
                 <div className="bg-primary-100 dark:bg-primary-900 p-3 rounded-lg">
-                  <GraduationCap className="text-primary-600 dark:text-primary-400" size={24} />
+                  <GraduationCap className="text-primary-400" size={24} />
                 </div>
                 <div className="flex-1">
                   <div className="flex items-start justify-between mb-2">
-                    <h3 className="text-xl font-bold text-gray-900 dark:text-white">
+                    <h3 className="text-xl font-bold text-gray-100">
                       {edu.institution}
                     </h3>
                     <span className="bg-primary-100 dark:bg-primary-900 text-primary-700 dark:text-primary-300 px-3 py-1 rounded-full text-sm font-medium">
                       {index + 1}
                     </span>
                   </div>
-                  <p className="text-lg font-medium text-gray-700 dark:text-gray-300 mb-1">
+                  <p className="text-lg font-medium text-gray-200 mb-1">
                     {edu.degree}
                   </p>
-                  <p className="text-sm text-gray-600 dark:text-gray-400 mb-2">
+                  <p className="text-sm text-gray-300 mb-2">
                     {edu.period}
                   </p>
                   {edu.details && (
-                    <p className="text-gray-700 dark:text-gray-300">{edu.details}</p>
+                    <p className="text-gray-200">{edu.details}</p>
                   )}
                 </div>
               </div>
