@@ -117,7 +117,7 @@ export const skillsData = {
     { name: "Python", logo: "/skills-logos/python.svg", category: "language" },
     { name: "LangChain", logo: "/skills-logos/langchain.svg", category: "framework" },
     // { name: "TensorFlow", logo: "/skills-logos/tensorflow.svg", category: "framework" },
-    { name: "scikit-learn", logo: "/skills-logos/sklearn.svg", category: "framework" },
+    { name: "scikit-learn", logo: "/skills-logos/scikit-learn.svg", category: "framework" },
     // { name: "PyTorch", logo: "/skills-logos/pytorch.svg", category: "framework" },
   ],
   "Cloud & Infrastructure": [
@@ -129,13 +129,14 @@ export const skillsData = {
   "Backend Engineering": [
     { name: "Java", logo: "/skills-logos/java.svg", category: "language" },
     { name: "Spring Boot", logo: "/skills-logos/spring-3.svg", category: "framework" },
-    { name: "FastAPI", logo: "/skills-logos/fastapi.svg", category: "framework" },
+    { name: "FastAPI", logo: "/skills-logos/fastAPI.svg", category: "framework" },
     { name: "Flask", logo: "/skills-logos/flask.svg", category: "framework" },
     { name: "PostgreSQL", logo: "/skills-logos/postgresql.svg", category: "database" },
     { name: "MongoDB", logo: "/skills-logos/mongoDB.svg", category: "database" },
   ],
   "DevOps & Tools": [
     { name: "Git", logo: "/skills-logos/git.svg", category: "tool" },
+    { name: "Postman", logo: "/skills-logos/postman.svg", category: "tool" },
     { name: "Jenkins", logo: "/skills-logos/jenkins.svg", category: "tool" },
     { name: "Grafana", logo: "/skills-logos/grafana.svg", category: "tool" },
     { name: "Prometheus", logo: "/skills-logos/prometheus.svg", category: "tool" },
